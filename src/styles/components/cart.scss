@@ -1,0 +1,102 @@
+@import '../_variables.scss';
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* align-items: fl; */
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 90px;
+  background-color: $secondary-color;
+  color: $text-color1;
+  align-items: stretch;
+
+  .cart-items-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .white-line {
+    background-color: $text-color1;
+    width: 2px;
+    border-radius: 30px;
+    margin-top: 10px;
+    /* border-left: 2px solid white; Add a left border with a width of 2px */
+    /* height: 100%; */
+    /* width: 2px; */
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .bill-container {
+      border-radius: 3px;
+      margin: 10px;
+      color: $text-color2;
+      font-family: Helvetica, sans-serif;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* width: 25%; */
+      padding: 10px;
+      width: 100%;
+
+      .order-summary-wrapper {
+        padding-bottom: 10px;
+        border-bottom: 1px solid;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .bill-table {
+        width: 100%;
+
+        .quantity {
+          text-align: right;
+        }
+
+        .total {
+          font-weight: bold;
+
+        }
+
+      }
+    }
+
+    .checkout-wrapper {
+      background-color: brown;
+      margin: 10px;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      border-radius: 3px;
+    }
+
+    .payment-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .pay-bt {
+        @extend .checkout-wrapper;
+
+        margin-top: 1rem;
+
+      }
+    }
+
+
+  }
+
+  // .pay-bt{
+  //   background-color: brown;
+  // }
+}

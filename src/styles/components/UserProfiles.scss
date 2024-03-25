@@ -1,0 +1,24 @@
+@import "../variables";
+
+.user-profile {
+  padding: 1rem;
+  padding-top: 90px;
+  background-color: $secondary-color;
+  color: $text-color1;
+
+  .account-details {
+    padding: 10px;
+
+    p {
+      padding-left: 10px;
+    }
+  }
+
+  .order-history {
+    padding: 10px;
+  }
+
+  .account-settings {
+    padding: 10px;
+  }
+}

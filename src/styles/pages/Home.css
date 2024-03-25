@@ -1,0 +1,24 @@
+/* Home.css (Create a new CSS file if not already created) */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.line {
+    /* padding: 10px; */
+    width: 90%;
+    height: 1px;
+    margin: 0px;
+    background-color: #96ca62;
+
+}

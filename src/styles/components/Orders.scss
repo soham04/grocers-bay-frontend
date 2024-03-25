@@ -1,0 +1,18 @@
+@import '../_variables.scss';
+
+
+.orders-container {
+    display: flex;
+    // flex-direction: row;
+    justify-content: left;
+    /* align-items: fl; */
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 90px;
+    background-color: $secondary-color;
+    color: $text-color1;
+    align-items: stretch;
+
+
+
+}

@@ -1,0 +1,92 @@
+@import "../variables";
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+  color: $text-color1;
+  margin: 1px;
+  border: black solid 2px;
+  max-width: 15%;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  .product-image {
+    border: 1px solid $accent-color;
+    border-radius: 3px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .product-info {
+    box-sizing: border-box;
+    padding: 2px;
+
+    .product-rating {
+      padding: 0;
+      padding-top: 10px;
+      margin: 0;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      font-family: "Orbitron", sans-serif;
+      font-weight: bold;
+      // color: $accent-color;
+      color: #fca311;
+    }
+
+    .product-name {
+      padding: 10px;
+      padding-left: 0;
+      padding-top: 0;
+      width: 100%;
+      font-size: 1rem;
+      margin: 0;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
+    }
+
+    .product-price {
+      margin: 0;
+      padding-bottom: 10px;
+      padding-left: 0;
+    }
+
+    .add-to-cart-button {
+      font-size: 1.2rem;
+      background-color: $accent-color;
+      color: black;
+      border: none;
+      border-radius: 3px;
+      padding: 0.4rem;
+    }
+
+    .quantity-details {
+      display: flex;
+      padding-top: 5px;
+
+      .quantity {
+        padding-bottom: 3px;
+        padding: 3px;
+      }
+
+      .decrease-btn,
+      .increase-btn {
+        background-color: $text-color1;
+        border: solid $text-color1;
+        border-radius: 2px;
+        margin: 3px;
+      }
+    }
+
+    .product-quantity {
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+
+    }
+  }
+}

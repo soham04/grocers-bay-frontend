@@ -1,0 +1,25 @@
+@import "../_variables.scss";
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  background-color: $primary-color;
+  color: $text-color1;
+  padding: 90px;
+
+  h2 {
+    color: $text-color1;
+  }
+
+  .not-found-image {
+    padding: 15px;
+    border-radius: 20px;
+    width: 70%;
+  }
+
+  .not-found-message {
+    color: $text-color1;
+  }
+}

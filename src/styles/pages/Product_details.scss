@@ -1,0 +1,138 @@
+@import "../variables";
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0rem;
+  padding-top: 90px;
+  // height: fit-content;
+  // background-color: aqua;
+
+  .left-section {
+    padding: 1rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // box-sizing: border-box;
+
+    .nutrition-info {
+      background-image: url("../../images/nutrition_info_background.jpeg");
+      background-repeat: no-repeat;
+
+      background-color: white;
+      color: white;
+      //   color: white;
+      padding: 1rem;
+      //   color: white;
+      border-radius: 0.5rem;
+      margin: 1rem;
+      border: $accent-color 2px solid;
+      width: 100%;
+      box-sizing: border-box;
+
+      .nutrition-info-title-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+          padding: 2px;
+        }
+
+        .nutrition-info-title {
+          padding: 0px;
+          font-size: 1.3rem;
+          margin: 0px;
+        }
+      }
+
+      table {
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+      }
+
+      table,
+      td {
+        border: solid 1px black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        padding: 3px;
+      }
+    }
+  }
+
+  .right-section {
+    width: 60%;
+    color: $text-color1;
+    // background-color: aqua;
+    padding: 1rem;
+
+    p {
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    h1 {
+      padding: 0rem;
+      margin: 0rem;
+      font-size: 2rem;
+    }
+
+    .product-info {
+      .product-price {
+        font-size: 3rem;
+        font-family: "Orbitron", sans-serif;
+        // font-weight: bold;
+        // color: $accent-color;
+        color: #fca311;
+        margin-top: 2rem;
+      }
+
+      .product-rating {
+        height: 3rem;
+      }
+
+      .add-to-cart-bt {
+        background-color: $accent-color;
+        color: $text-color2;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        width: max-content;
+        font-weight: bold;
+        // margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .receipe,
+    .description-box {
+      color: $text-color1;
+      border-radius: 1rem;
+      margin-top: 1rem;
+      border: $accent-color 2px solid;
+      padding: 1rem;
+      //   border: 1px;
+    }
+
+    .description-content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+    }
+  }
+
+  .left-section,
+  .right-section {
+    // flex: 1;
+    overflow: auto;
+    /* Enable scrolling for each div */
+  }
+}

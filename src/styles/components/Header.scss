@@ -1,0 +1,204 @@
+@import "../variables";
+
+header {
+  background-color: $primary-color;
+  color: $text-color1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  max-height: 12%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: 1;
+
+  .active:not(.name-wrapper) {
+    color: $accent-color;
+    border-bottom: solid 2px;
+  }
+
+  .header-container {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 12%;
+
+    .section1 {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      img {
+        padding-left: 1rem;
+        height: 3rem;
+      }
+
+      h1 {
+        font-family: "Poppins";
+        font-size: 2.5rem;
+        padding-left: 1rem;
+        margin: 0;
+        text-wrap: nowrap;
+      }
+
+      nav {
+        ul {
+          display: flex;
+
+          li {
+            list-style: none;
+            box-sizing: border-box;
+            padding: 0.6rem;
+            font-size: 2rem;
+
+            &:hover,
+            .signin-bt:hover {
+              color: $accent-color;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .section2 {
+      padding-right: 1.5px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      flex-direction: row;
+      color: white;
+      height: 100%;
+
+      .search_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        // width: 100%;
+        box-sizing: border-box;
+        border: $accent-color solid 1px;
+        border-radius: 15px;
+        padding-left: 0px;
+
+        .search-input-wrapper {
+          input {
+            font-size: 1rem;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            // border-left: 20px;
+            padding: 5px;
+            background-color: black;
+            color: $text-color1;
+            border: 0;
+            // width: 100%;
+          }
+
+          &:focus-within {
+            // width: 300px;
+            width: 100%;
+            outline: none;
+          }
+        }
+
+        .search-icon-wrapper {
+          svg {
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+            border: 0;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .login-bts {
+        display: flex;
+        padding: 0.8rem;
+
+        .signin-bt,
+        .signup-bt {
+          background-color: $primary-color;
+          border-radius: 5px;
+          padding: 0.5rem;
+          width: min-content;
+          border: 20px;
+
+
+          &.signup-bt {
+            background-color: $accent-color;
+            color: black;
+          }
+
+          &:hover {
+            &.signup-bt {
+              color: $text-color1;
+            }
+
+            color: $accent-color;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .dropdown {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        svg {
+          height: 1.7rem;
+          padding: 3px;
+          box-sizing: border-box;
+        }
+
+        .dropdown-toggle {
+          box-sizing: border-box;
+          padding: 3px;
+          font-size: 1.7rem;
+        }
+      }
+
+      .dropdown-menu {
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: left;
+        top: 100%;
+        right: 0;
+        padding: 0.7rem;
+        // border-bottom-left-radius: 0.5rem;
+        // border-bottom-right-radius: 0.5rem;
+
+        .dropdown-menu-item {
+          display: flex;
+          // font-size: 1rem;
+
+          &:hover {
+            color: $accent-color;
+          }
+
+          svg {
+            padding-right: 0.5rem;
+            width: 3rem;
+          }
+        }
+
+        a {
+          padding: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

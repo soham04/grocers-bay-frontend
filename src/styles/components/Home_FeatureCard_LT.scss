@@ -1,0 +1,53 @@
+@import "../_variables.scss";
+
+.feature__section_LT {
+  color: $text-color1;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  .feature__text_LT {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 20px;
+
+    h3 {
+      font-size: 30px;
+      text-align: right;
+      margin: 0px;
+      color: $text-color1;
+    }
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .feature__img_LT {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+
+    img {
+      width: 90%;
+      box-sizing: border-box;
+      height: 300px;
+      border-radius: 15px;
+    }
+  }
+}
