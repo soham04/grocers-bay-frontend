@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Grocers Bay - Frontend Service
+This is the repo for the frontend of the *Grocers Bay project*. Its implemented in *ReactJS*. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo Link
 
-## Available Scripts
+https://grocers-bay-frontend.onrender.com 
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+## Table of Content:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   [Screenshots](#screenshots)
+-   [Technologies](#technologies)
+-   [Local Installation and Setup Instructions](#Local-Installation-and-Setup-Instructions)
+-   [Status](#status)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
+## Technologies
+Sure, here's the list of technologies and libraries used in the frontend code as requested, each on one line:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: A JavaScript library for building user interfaces. [Official Website](https://reactjs.org/)
+- **Sass**: A CSS preprocessor that extends CSS with features like variables, nesting, and mixins. [Official Website](https://sass-lang.com/)
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs. [Official Website](https://tailwindcss.com/)
+- **Stripe**: A payment processing platform that enables businesses to accept payments online. [Official Website](https://stripe.com/)
+- **Axios**: A promise-based HTTP client for making asynchronous requests in the browser and Node.js. [GitHub Repository](https://github.com/axios/axios)
+- **Font Awesome**: A font and icon toolkit based on CSS and LESS. [Official Website](https://fontawesome.com/)
+## Local Installation and Setup Instructions
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-### `npm run build`
+1) Installation:
+```npm install```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2) To Run Test Suite:
+```npm test```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3) To Start Server:
+```npm start```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4) To Visit App in browser:
+http://localhost:8000/home 
 
-### `npm run eject`
+## Status
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project is under development currently. The frontend developed till now is hosted on the [demo](#demo-link) link. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pages implemented: 
+ - Home page
+ - Login 
+ - Signup
+ - Search
+ - Account info & Address change
+ - Order History
+ - Payment and Checkout
+ - Product catalog
+ - Product information
+ - Cart
