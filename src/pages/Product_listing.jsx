@@ -33,10 +33,11 @@ const ProductsDisplay = ({ searchQuery }) => {
                         headers: {
                             'Content-Type': 'application/json',
                         },
+                        baseURL: 'http://grocersbaybackend.sohamshinde.co', // Replace with your backend API URL
                         withCredentials: true // Set credentials to true
                     });
 
-                    
+
                 // const response = await ax
                 console.log(response);
                 // Extract the organic_results from the API response

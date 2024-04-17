@@ -45,7 +45,7 @@ const Header = ({ onSearch }) => {
 
     const handleSignOut = async () => {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_AUTH_DOMAIN}/v1/customer/logout`, {
+            const response = await axios.get(`${process.env.REACT_APP_AUTH_HOST}/v1/customer/logout`, {
                 headers: {
                     'Content-Type': 'application/json',
                 },

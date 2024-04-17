@@ -1,6 +1,8 @@
 # Grocers Bay - Frontend Service
 This is the repo for the frontend of the *Grocers Bay project*. Its implemented in *ReactJS*. 
 
+[Link](https://github.com/soham04/grocers-bay) to the project repo.
+
 ## Demo Link
 
 https://grocers-bay-frontend.onrender.com 
